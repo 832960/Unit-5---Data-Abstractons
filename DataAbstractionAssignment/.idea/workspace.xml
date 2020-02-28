@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ffe3285e-9a37-421b-b6aa-a586e850fc4b" name="Default Changelist" comment="" />
+    <list default="true" id="ffe3285e-9a37-421b-b6aa-a586e850fc4b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestCases/CustomerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/TestCases/CustomerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataAbstractionAssignment/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataAbstractionAssignment/Customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/DataAbstractionAssignment/CustomerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/DataAbstractionAssignment/CustomerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Customer.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,14 +47,45 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="1036201066">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.0" value="2" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="1189" />
+          <entry key="txt" value="58" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="1189" />
+          <entry key="PLAIN_TEXT" value="58" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Customer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+            <state relative-caret-position="306">
+              <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -59,8 +96,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Deposit.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="22" selection-start-column="22" selection-end-column="22" />
+            <state relative-caret-position="238">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
@@ -74,11 +111,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TestCases/CustomerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+            <state relative-caret-position="391">
+              <caret line="41" selection-start-line="41" selection-end-line="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -100,13 +137,16 @@
       <find>savingrate</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/Deposit.java" />
         <option value="$PROJECT_DIR$/src/Withdraw.java" />
-        <option value="$PROJECT_DIR$/src/Customer.java" />
         <option value="$PROJECT_DIR$/TestCases/CustomerTest.java" />
+        <option value="$PROJECT_DIR$/src/Customer.java" />
       </list>
     </option>
   </component>
@@ -137,12 +177,17 @@
       </profile-state>
     </entry>
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -164,8 +209,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -175,8 +218,8 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1582569337143" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1582917016338" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MovieTheatre" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Global Libraries" />
@@ -255,8 +298,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.CustomerTest" />
-        <item itemvalue="JUnit.CustomerTest.testCustomerWithdraw" />
         <item itemvalue="JUnit.CustomerTest.testCustomerDeposit" />
+        <item itemvalue="JUnit.CustomerTest.testCustomerWithdraw" />
         <item itemvalue="JUnit.CustomerTest.testWithdraw" />
         <item itemvalue="JUnit.CustomerTest.testDeposit" />
       </list>
@@ -284,22 +327,20 @@
       <workItem from="1582567909869" duration="93000" />
       <workItem from="1582568017874" duration="1317000" />
       <workItem from="1582569410438" duration="25000" />
+      <workItem from="1582570066144" duration="513000" />
+      <workItem from="1582915208004" duration="1807000" />
     </task>
+    <task id="LOCAL-00001" summary="Customer class with Deposit and Withdraw classes">
+      <created>1582570137389</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1582570137389</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CustomerTest_testCustomerDeposit - 2020.02.20 at 11h 29m 11s.xml">
-      <configuration name="CustomerTest.testCustomerDeposit" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CustomerTest_testCustomerDeposit - 2020.02.20 at 11h 32m 17s.xml">
-      <configuration name="CustomerTest.testCustomerDeposit" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CustomerTest_testCustomerDeposit - 2020.02.20 at 11h 33m 47s.xml">
-      <configuration name="CustomerTest.testCustomerDeposit" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CustomerTest_testCustomerDeposit - 2020.02.20 at 11h 35m 00s.xml">
-      <configuration name="CustomerTest.testCustomerDeposit" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CustomerTest_testCustomerWithdraw - 2020.02.20 at 11h 35m 04s.xml">
       <configuration name="CustomerTest.testCustomerWithdraw" configurationId="JUnit" />
     </history-entry>
@@ -318,15 +359,27 @@
     <history-entry file="CustomerTest - 2020.02.24 at 10h 28m 45s.xml">
       <configuration name="CustomerTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CustomerTest_testCustomerDeposit - 2020.02.28 at 11h 01m 28s.xml">
+      <configuration name="CustomerTest.testCustomerDeposit" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CustomerTest_testCustomerDeposit - 2020.02.28 at 11h 01m 55s.xml">
+      <configuration name="CustomerTest.testCustomerDeposit" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CustomerTest_testCustomerDeposit - 2020.02.28 at 11h 05m 39s.xml">
+      <configuration name="CustomerTest.testCustomerDeposit" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CustomerTest - 2020.02.28 at 11h 05m 44s.xml">
+      <configuration name="CustomerTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6419000" />
+    <option name="totallyTimeSpent" value="8739000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="916" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26432666" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27148998" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -392,6 +445,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Customer class with Deposit and Withdraw classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Customer class with Deposit and Withdraw classes" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/Date.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -405,23 +462,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Customer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Deposit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="22" selection-start-column="22" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Withdraw.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -429,10 +469,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Deposit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/TestCases/CustomerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+        <state relative-caret-position="391">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

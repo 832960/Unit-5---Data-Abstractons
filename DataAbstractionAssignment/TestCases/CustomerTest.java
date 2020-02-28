@@ -20,46 +20,42 @@ public class CustomerTest {
     @Test
     public void testDeposit() {
 
-        //Make a new deposit
-        Deposit test = new Deposit(1000, new Date(2020 - 1900, 1, 20, 0, 0, 0), Customer.CHECKING);
-
-        //Check if the deposit shows the amount deposited, date of deposit, and the deposit to the account
-        assertEquals("Deposit of: $1000.0 Date: Thu Feb 20 00:00:00 PST 2020 into account: Checking", test.toString());
+        //Check if the print is working correctly
+        assertEquals("Deposit of: $1000.0 Date: Thu Feb 20 00:00:00 PST 2020 into account: Checking",
+                new Deposit(1000, new Date(2020 - 1900, 1, 20, 0, 0, 0),
+                        Customer.CHECKING).toString());
 
     }
 
     @Test
     public void testWithdraw() {
 
-        //Make a new withdrawal
-        Withdraw test = new Withdraw(1000, new Date(2020 - 1900, 1, 20, 0, 0, 0), Customer.CHECKING);
-
-        //Check if the deposit shows the amount withdrawn, date of withdrawal, and the deposit to the account
-        assertEquals("Withdrawal of: $1000.0 Date: Thu Feb 20 00:00:00 PST 2020 into account: Checking", test.toString());
+        //Check if the print is working correctly
+        assertEquals("Withdrawal of: $1000.0 Date: Thu Feb 20 00:00:00 PST 2020 into account: Checking",
+                new Withdraw(1000, new Date(2020 - 1900, 1, 20, 0, 0, 0),
+                        Customer.CHECKING).toString());
 
     }
 
     @Test
     public void testCustomerDeposit() {
 
-        //Make a deposit
-        test.deposit(1000, new Date(2020 - 1900, 1, 20, 0, 0, 0), Customer.CHECKING);
-
-        //Check if the amount in the account changed and if the deposit was recorded
-        assertEquals(11000.0, test.getCheckBalance(), 2);
-        assertEquals(1, test.getDeposits().size());
+        assertEquals(0, test.deposit(-100, new Date(), Customer.CHECKING), 2);
+        assertEquals(0, test.deposit(100, new Date(), "Hello"), 2);
+        assertEquals(11000.95, test.deposit(1000, new Date(), Customer.CHECKING), 2);
+        assertEquals(11000.95, test.deposit(1000, new Date(), Customer.SAVING), 2);
 
     }
 
     @Test
     public void testCustomerWithdraw() {
 
-        //Make a withdrawal
-        test.withdraw(1000, new Date(2020 - 1900, 1, 20, 0, 0, 0), Customer.SAVING);
-
-        //Check if the amount in the account changed and if the withdrawal was recorded
-        assertEquals(9000,test.getSavingBalance(), 2);
-        assertEquals(1, test.getWithdraws().size());
+        assertEquals(-100, test.withdraw(-100, new Date(), Customer.CHECKING), 2);
+        assertEquals(-100, test.withdraw(-100, new Date(), "Hello"), 2);
+        assertEquals(-100, test.withdraw(11000, new Date(), Customer.CHECKING), 2);
+        assertEquals(-100, test.withdraw(11000, new Date(), Customer.SAVING), 2);
+        assertEquals(10000-1000.95, test.withdraw(1000.95, new Date(), Customer.CHECKING),2 );
+        assertEquals(10000-1000.95, test.withdraw(1000.95, new Date(), Customer.SAVING), 2);
 
     }
 

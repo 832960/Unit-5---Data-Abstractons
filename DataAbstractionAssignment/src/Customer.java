@@ -35,55 +35,30 @@ public class Customer {
 
     }
 
-    public double getCheckBalance() {
-
-        return checkBalance;
-
-    }
-
-    public double getSavingBalance() {
-
-        return savingBalance;
-
-    }
-
-    public ArrayList<Deposit> getDeposits() {
-
-        return deposits;
-
-    }
-
-    public ArrayList<Withdraw> getWithdraws() {
-
-        return withdraws;
-
-    }
-
     //Requires: double, deposit amount. date, date of deposit. string, checking or saving account
     //Effects: returns the total amount in the account with the added deposit and adds a new deposit to the deposits array
     public double deposit(double amt, Date date, String account) {
+
+        if (amt <= 0 || (!account.equals(CHECKING) && !account.equals(SAVING))) {
+
+            return 0;
+
+        }
+
+        deposits.add(new Deposit(amt, date, account));
 
         //your code here
         if (account.equals(CHECKING)) {
 
             checkBalance += amt;
-            deposits.add(new Deposit(amt, date, account));
             return checkBalance;
-
-        }
-
-        else if (account.equals(SAVING)) {
-
-            savingBalance += amt;
-            deposits.add(new Deposit(amt, date, account));
-            return savingBalance;
 
         }
 
         else {
 
-            System.out.println("Use CHECKING or SAVING to choose accounts");
-            return 0;
+            savingBalance += amt;
+            return savingBalance;
 
         }
 
@@ -94,26 +69,25 @@ public class Customer {
     public double withdraw(double amt, Date date, String account) {
 
         //your code here
-        if (account.equals(CHECKING)) {
+        if (amt <= 0 || checkOverdraft(amt, account) || (!account.equals(CHECKING) && !account.equals(SAVING))) {
 
-            checkBalance -= amt;
-            withdraws.add(new Withdraw(amt, date, account));
-            return checkBalance;
+            return -100;
 
         }
 
-        else if (account.equals(SAVING)) {
+        withdraws.add(new Withdraw(amt, date, account));
 
-            savingBalance -= amt;
-            withdraws.add(new Withdraw(amt, date, account));
-            return savingBalance;
+        if (account.equals(CHECKING)) {
+
+            checkBalance -= amt;
+            return checkBalance;
 
         }
 
         else {
 
-            System.out.println("Use CHECKING or SAVING to choose accounts");
-            return 0;
+            savingBalance -= amt;
+            return savingBalance;
 
         }
 
@@ -126,19 +100,18 @@ public class Customer {
         //your code here
         if (account.equals(CHECKING)) {
 
-            return checkBalance < OVERDRAFT;
+            return checkBalance - amt < OVERDRAFT;
 
         }
 
         else if (account.equals(SAVING)) {
 
-            return savingBalance < OVERDRAFT;
+            return savingBalance - amt < OVERDRAFT;
 
         }
 
         else {
 
-            System.out.println("Use CHECKING or SAVING to choose accounts");
             return false;
 
         }
