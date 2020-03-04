@@ -100,7 +100,7 @@ public class Customer {
         //your code here
         if (account.equals(CHECKING)) {
 
-            return checkBalance - amt < OVERDRAFT;
+            return checkBalance - amt <  OVERDRAFT;
 
         }
 

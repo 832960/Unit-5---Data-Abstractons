@@ -8,7 +8,7 @@ import static org.junit.Assert.*;
 
 public class CustomerTest {
 
-    Customer test;
+    public Customer test;
 
     @Before
     public void setUp() {
@@ -42,8 +42,8 @@ public class CustomerTest {
 
         assertEquals(0, test.deposit(-100, new Date(), Customer.CHECKING), 2);
         assertEquals(0, test.deposit(100, new Date(), "Hello"), 2);
-        assertEquals(11000.95, test.deposit(1000, new Date(), Customer.CHECKING), 2);
-        assertEquals(11000.95, test.deposit(1000, new Date(), Customer.SAVING), 2);
+        assertEquals(11000, test.deposit(1000, new Date(), Customer.CHECKING), 2);
+        assertEquals(11000, test.deposit(1000, new Date(), Customer.SAVING), 2);
 
     }
 
