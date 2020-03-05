@@ -51,7 +51,7 @@ public class CustomerTest {
     public void testCustomerWithdraw() {
 
         assertEquals(-100, test.withdraw(-100, new Date(), Customer.CHECKING), 0);
-        assertEquals(-100, test.withdraw(-100, new Date(), "Hello"), 0);
+        assertEquals(-100, test.withdraw(100, new Date(), "Hello"), 0);
         assertEquals(-100, test.withdraw(11000, new Date(), Customer.CHECKING), 0);
         assertEquals(-100, test.withdraw(11000, new Date(), Customer.SAVING), 0);
         assertEquals(10000-1000.95, test.withdraw(1000.95, new Date(), Customer.CHECKING),0);

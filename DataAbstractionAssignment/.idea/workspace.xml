@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ffe3285e-9a37-421b-b6aa-a586e850fc4b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCases/CustomerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/TestCases/CustomerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataAbstractionAssignment/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataAbstractionAssignment/Customer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/DataAbstractionAssignment/CustomerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/DataAbstractionAssignment/CustomerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Customer.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -81,7 +77,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CustomerTest.testCustomerDeposit">
+  <component name="RunManager" selected="JUnit.CustomerTest">
     <configuration name="CustomerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DataAbstractionAssignment" />
       <option name="PACKAGE_NAME" value="" />
@@ -140,8 +136,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CustomerTest.testCustomerDeposit" />
         <item itemvalue="JUnit.CustomerTest" />
+        <item itemvalue="JUnit.CustomerTest.testCustomerDeposit" />
         <item itemvalue="JUnit.CustomerTest.testCustomerWithdraw" />
         <item itemvalue="JUnit.CustomerTest.testWithdraw" />
         <item itemvalue="JUnit.CustomerTest.testDeposit" />
@@ -176,7 +172,7 @@
       <workItem from="1583259616010" duration="707000" />
       <workItem from="1583260826958" duration="1469000" />
       <workItem from="1583262927132" duration="59000" />
-      <workItem from="1583366183083" duration="497000" />
+      <workItem from="1583366183083" duration="766000" />
     </task>
     <task id="LOCAL-00001" summary="Customer class with Deposit and Withdraw classes">
       <created>1582570137389</created>
@@ -199,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583366300917</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Customer class with Deposit and Withdraw classes">
+      <created>1583366921372</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1583366921372</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,18 +224,11 @@
     <option name="LAST_COMMIT_MESSAGE" value="Customer class with Deposit and Withdraw classes" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/TestCases/CustomerTest.java</url>
-          <line>40</line>
-          <properties class="CustomerTest" method="testCustomerDeposit">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="test.withdraws" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="masterDetails">
     <states>
