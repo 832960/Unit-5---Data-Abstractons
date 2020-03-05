@@ -40,22 +40,22 @@ public class CustomerTest {
     @Test
     public void testCustomerDeposit() {
 
-        assertEquals(0, test.deposit(-100, new Date(), Customer.CHECKING), 2);
-        assertEquals(0, test.deposit(100, new Date(), "Hello"), 2);
-        assertEquals(11000, test.deposit(1000, new Date(), Customer.CHECKING), 2);
-        assertEquals(11000, test.deposit(1000, new Date(), Customer.SAVING), 2);
+        assertEquals(0, test.deposit(-100, new Date(), Customer.CHECKING), 0);
+        assertEquals(0, test.deposit(100, new Date(), "Hello"), 0);
+        assertEquals(11000, test.deposit(1000, new Date(), Customer.CHECKING), 0);
+        assertEquals(11000, test.deposit(1000, new Date(), Customer.SAVING), 0);
 
     }
 
     @Test
     public void testCustomerWithdraw() {
 
-        assertEquals(-100, test.withdraw(-100, new Date(), Customer.CHECKING), 2);
-        assertEquals(-100, test.withdraw(-100, new Date(), "Hello"), 2);
-        assertEquals(-100, test.withdraw(11000, new Date(), Customer.CHECKING), 2);
-        assertEquals(-100, test.withdraw(11000, new Date(), Customer.SAVING), 2);
-        assertEquals(10000-1000.95, test.withdraw(1000.95, new Date(), Customer.CHECKING),2 );
-        assertEquals(10000-1000.95, test.withdraw(1000.95, new Date(), Customer.SAVING), 2);
+        assertEquals(-100, test.withdraw(-100, new Date(), Customer.CHECKING), 0);
+        assertEquals(-100, test.withdraw(-100, new Date(), "Hello"), 0);
+        assertEquals(-100, test.withdraw(11000, new Date(), Customer.CHECKING), 0);
+        assertEquals(-100, test.withdraw(11000, new Date(), Customer.SAVING), 0);
+        assertEquals(10000-1000.95, test.withdraw(1000.95, new Date(), Customer.CHECKING),0);
+        assertEquals(10000-1000.95, test.withdraw(1000.95, new Date(), Customer.SAVING), 0);
 
     }
 

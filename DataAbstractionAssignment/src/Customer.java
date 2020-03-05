@@ -39,6 +39,7 @@ public class Customer {
     //Effects: returns the total amount in the account with the added deposit and adds a new deposit to the deposits array
     public double deposit(double amt, Date date, String account) {
 
+        //your code here
         if (amt <= 0 || (!account.equals(CHECKING) && !account.equals(SAVING))) {
 
             return 0;
@@ -47,7 +48,6 @@ public class Customer {
 
         deposits.add(new Deposit(amt, date, account));
 
-        //your code here
         if (account.equals(CHECKING)) {
 
             checkBalance += amt;
@@ -100,7 +100,7 @@ public class Customer {
         //your code here
         if (account.equals(CHECKING)) {
 
-            return checkBalance - amt <  OVERDRAFT;
+            return checkBalance - amt < OVERDRAFT;
 
         }
 
